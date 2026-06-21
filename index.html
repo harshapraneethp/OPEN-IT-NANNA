@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Father's Day Nanna ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:'Poppins',sans-serif;
+background:
+linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+url('YOUR_PHOTO_URL_HERE');
+background-size:cover;
+background-position:center;
+overflow:hidden;
+}
+
+.card{
+width:90%;
+max-width:750px;
+padding:50px;
+text-align:center;
+color:white;
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(15px);
+border-radius:30px;
+border:1px solid rgba(255,255,255,0.2);
+box-shadow:0 8px 40px rgba(0,0,0,0.4);
+}
+
+h1{
+font-family:'Playfair Display',serif;
+font-size:3rem;
+margin-bottom:15px;
+}
+
+button{
+padding:14px 35px;
+border:none;
+border-radius:30px;
+font-size:1rem;
+cursor:pointer;
+font-weight:600;
+margin-top:15px;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.message{
+display:none;
+animation:fadeIn 2s ease;
+margin-top:25px;
+}
+
+.quote{
+font-size:1.4rem;
+font-style:italic;
+line-height:1.8;
+margin:25px 0;
+color:#f8fafc;
+}
+
+.from{
+margin-top:25px;
+font-size:1.2rem;
+font-weight:600;
+}
+
+.heart{
+position:absolute;
+color:white;
+font-size:20px;
+animation:float 10s linear infinite;
+opacity:0.7;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(-100px);
+opacity:0;
+}
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="heart" style="left:10%;animation-delay:0s;">❤️</div>
+<div class="heart" style="left:25%;animation-delay:2s;">❤️</div>
+<div class="heart" style="left:45%;animation-delay:4s;">❤️</div>
+<div class="heart" style="left:65%;animation-delay:1s;">❤️</div>
+<div class="heart" style="left:85%;animation-delay:3s;">❤️</div>
+
+<div class="card">
+
+<h1>Happy Father's Day, Nanna ❤️</h1>
+
+<button onclick="showMessage()">
+Open My Message
+</button>
+
+<div class="message" id="message">
+
+<p class="quote">
+"When I grow taller than you,<br>
+I will always look up to you."
+</p>
+
+<p>
+Thank you for every lesson, every sacrifice,
+every smile, and every moment of support.
+No matter where life takes me, you will always
+be my first hero and my greatest inspiration.
+</p>
+
+<div class="from">
+With Love,<br>
+Harsha 💙
+</div>
+
+</div>
+
+</div>
+
+<script>
+function showMessage(){
+document.getElementById("message").style.display="block";
+}
+</script>
+
+</body>
+</html>
